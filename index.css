@@ -1,0 +1,15 @@
+/* Here we got some css for the website */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html,main {
+        /* Helvetica Neue, Helvetica */
+        font-family: Helvetica Neue, Helvetica;
+        font-size: 1.2em;
+    }
+
+}
