@@ -568,12 +568,120 @@ html,main {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-\[-3\] {
+  right: -3;
+}
+
+.right-\[-30px\] {
+  right: -30px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[-30\] {
+  top: -30;
+}
+
+.top-\[-90\] {
+  top: -90;
+}
+
+.top-\[-9rem\] {
+  top: -9rem;
+}
+
+.right-\[-3rem\] {
+  right: -3rem;
+}
+
+.bottom-\[-3rem\] {
+  bottom: -3rem;
+}
+
+.top-\[-90px\] {
+  top: -90px;
+}
+
+.bottom-\[-30px\] {
+  bottom: -30px;
+}
+
+.left-\[-20px\] {
+  left: -20px;
+}
+
+.left-\[-10px\] {
+  left: -10px;
+}
+
+.bottom-\[-20px\] {
+  bottom: -20px;
+}
+
+.bottom-\[-10px\] {
+  bottom: -10px;
+}
+
+.top-\[-40px\] {
+  top: -40px;
+}
+
+.top-\[-10px\] {
+  top: -10px;
+}
+
+.top-\[-100\%\] {
+  top: -100%;
+}
+
+.top-\[100\%\] {
+  top: 100%;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[300px\] {
+  top: 300px;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .m-2 {
@@ -603,6 +711,41 @@ html,main {
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.-my-80 {
+  margin-top: -20rem;
+  margin-bottom: -20rem;
+}
+
+.my-80 {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 
 .mb-5 {
@@ -645,12 +788,20 @@ html,main {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline {
   display: inline;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -669,6 +820,32 @@ html,main {
   height: 3rem;
 }
 
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .min-h-\[300vh\] {
   min-height: 300vh;
 }
@@ -679,6 +856,10 @@ html,main {
 
 .min-h-\[600vh\] {
   min-height: 600vh;
+}
+
+.min-h-\[800vh\] {
+  min-height: 800vh;
 }
 
 .w-full {
@@ -707,12 +888,47 @@ html,main {
   width: 1rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .justify-between {
@@ -782,6 +998,30 @@ html,main {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.fill-accent {
+  fill: #006FCF;
+}
+
+.fill-accent-500 {
+  fill: #006FCF;
+}
+
+.fill-accent-300 {
+  fill: #007FEE;
+}
+
+.fill-accent-50 {
+  fill: #1592FF;
+}
+
+.fill-accent-400 {
+  fill: #0077DE;
+}
+
+.fill-accent-600 {
+  fill: #0067C0;
 }
 
 .p-2 {
@@ -865,6 +1105,31 @@ html,main {
   padding-right: 100px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -901,8 +1166,28 @@ html,main {
   padding-top: 1rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-\[12px\] {
@@ -943,6 +1228,18 @@ html,main {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-green-500 {

@@ -21,7 +21,7 @@ function fuqQuestions(){
 
         let ans = $(this).find(".answer")
 
-        let toggleButton = $(this).find("button")
+        let toggleButton = $(this).find(".grid p")
 
         let toggleHeader = $(this).find(".toggle")
 
@@ -29,24 +29,22 @@ function fuqQuestions(){
 
         let openHeight = $(this).outerHeight()
 
-        ans.addClass('hidden')
+        ans.addClass('hid')
 
         $(this).css('height', initialHeight)
 
         $(toggleHeader).click( function()  {
 
-            console.log("lox")
-
             let classes = ans.attr('class').split(' ')
 
-            if(classes.indexOf('hidden') >= 0){
-                ans.removeClass('hidden')
+            if(classes.indexOf('hid') >= 0){
+                ans.removeClass('hid')
                 toggleButton.text("-")
                 ans.parent().css('height', openHeight)
             } else {
                 ans.parent().css('height', initialHeight)
                 toggleButton.text("+")
-                ans.addClass("hidden")
+                ans.addClass("hid")
             }
 
         })
