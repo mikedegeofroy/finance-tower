@@ -1,11 +1,18 @@
 $( document ).ready(function() {
-    // $(".fuq").click( () => {
 
+    fuqQuestions();
 
-    // })
+});
 
-    // console.log($(".fuq"))
+$(document).scroll( (yo) => {
+    if($(document).scrollTop() > 15){
+        $('header').addClass("shadow-sm")
+    } else {
+        $('header').removeClass("shadow-sm")
+    }
+})
 
+function fuqQuestions(){
     $(".fuq").each( function(index) {
 
         let initialHeight = $(this).outerHeight()
@@ -13,6 +20,10 @@ $( document ).ready(function() {
         // console.log(this, initialHeight)
 
         let ans = $(this).find(".answer")
+
+        let toggleButton = $(this).find("button")
+
+        let toggleHeader = $(this).find(".toggle")
 
         ans.removeClass('hidden')
 
@@ -22,29 +33,23 @@ $( document ).ready(function() {
 
         $(this).css('height', initialHeight)
 
+        $(toggleHeader).click( function()  {
 
-        $(this).click( function()  {
+            console.log("lox")
 
             let classes = ans.attr('class').split(' ')
 
             if(classes.indexOf('hidden') >= 0){
                 ans.removeClass('hidden')
+                toggleButton.text("-")
                 ans.parent().css('height', openHeight)
             } else {
-                ans.addClass("hidden")
                 ans.parent().css('height', initialHeight)
+                toggleButton.text("+")
+                ans.addClass("hidden")
             }
 
         })
 
     });
-
-});
-
-$(document).scroll( (yo) => {
-    if($(document).scrollTop() > 15){
-        $('header').addClass("shadow-md")
-    } else {
-        $('header').removeClass("shadow-md")
-    }
-})
+}
