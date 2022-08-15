@@ -1,45 +1,49 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
     fuqQuestions();
 
     hooks();
 
-    window.addEventListener("touchstart", eventListener, {passive:false});
+    window.addEventListener("touchstart", eventListener, { passive: false });
 
 });
 
-$(document).scroll( (yo) => {
-    if($(document).scrollTop() > 15){
+$(document).scroll((yo) => {
+    if ($(document).scrollTop() > 15) {
         $('header').addClass("shadow-sm")
     } else {
         $('header').removeClass("shadow-sm")
     }
 })
 
-function hooks(){
-    $(".contact").each( function() {
-        $(this).click( function () {
+function hooks() {
+    $(".contact").each(function () {
+        $(this).click(function () {
             window.open('https://t.me/mikedegeofroy', '_blank');
             // window.location.href = 'https://t.me/mikedegeofroy'
         })
     })
 
-    $(".remote").click( function () {
+    $(".logo").click(function () {
+        window.scrollTo(0,0)
+    })
+
+    $(".remote").click(function () {
         // document.getElementsByClassName(".faq").scrollIntoView();
         $(".faq")[0].scrollIntoView();
     })
 
     let proptab = $(".properties")
 
-    $(".properties-tggl").each( function () {
-        $(this).click( function() {
+    $(".properties-tggl").each(function () {
+        $(this).click(function () {
 
             let classes = proptab.attr('class').split(' ')
 
-            if(classes.indexOf('hidden') > 0){
+            if (classes.indexOf('hidden') > 0) {
                 proptab.removeClass('hidden')
                 $("body").css("overflow", "hidden");
-                $('body').bind('touchmove', function(e){e.preventDefault()})
+                $('body').bind('touchmove', function (e) { e.preventDefault() })
             } else {
                 proptab.addClass('hidden')
                 $("body").css("overflow", "auto");
@@ -49,8 +53,8 @@ function hooks(){
     })
 }
 
-function fuqQuestions(){
-    $(".fuq").each( function(index) {
+function fuqQuestions() {
+    $(".fuq").each(function (index) {
 
         let initialHeight = $(this).outerHeight()
 
@@ -70,11 +74,11 @@ function fuqQuestions(){
 
         $(this).css('height', initialHeight)
 
-        $(toggleHeader).click( function()  {
+        $(toggleHeader).click(function () {
 
             let classes = ans.attr('class').split(' ')
 
-            if(classes.indexOf('hid') >= 0){
+            if (classes.indexOf('hid') >= 0) {
                 ans.removeClass('hid')
                 toggleButton.text("-")
                 ans.parent().css('height', openHeight)
