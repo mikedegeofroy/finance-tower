@@ -13,11 +13,68 @@
 
 <body>
     <header class="z-40 fixed bg-white w-full py-2">
-        <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
-            <img class="w-20 inline logo cursor-pointer" src="/logo.png" alt="">
-            <a class="float-right inline text-gray-500 text-sm leading-[1.6rem]" href="/ru.html">RU</a>
+        <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto flex justify-between">
+            <div class="flex">
+                <div
+                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex md:hidden closed cursor-pointer">
+
+                    <div class="border-b-2 border-white-300 origin-center"></div>
+                    <div class="border-b-2 border-white-300 origin-center"></div>
+                    <div class="border-b-2 border-white-300 origin-center"></div>
+                </div>
+                <img class="w-20 inline logo cursor-pointer" src="/logo.png" alt="">
+            </div>
+            <div class="hidden md:inline navigation">
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Benefits</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Investment Options</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Process</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Terms</p>
+            </div>
+            <a class="lang float-right inline text-white rounded-sm w-9 text-xs leading-[1.6rem] bg-accent"
+                href="/ru.html">
+                <div class="grid place-items-center w-full h-full">
+                    Ru
+                </div>
+            </a>
         </div>
     </header>
+
+    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white">
+        <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="navigation pt-10">
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Benefits
+                </div>
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Investment Options
+                </div>
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Process
+                </div>
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Terms
+                </div>
+                <div class="w-full">
+                    <a
+                        class="mb-4 md:mr-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-md w-fit mx-auto block text-center mt-3">
+                        <span>
+                            Call about your financial freedom today
+                        </span>
+                        <span class="pl-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-arrow-right inline">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <a target="_blank"
         class="contact cursor-pointer z-20 fixed bottom-0 right-0 rounded-full bg-white w-fit shadow-2xl m-2 p-3 pt-2 text-[#0180c1] font-base">
         <div class="inline pr-1" color="rgb(79, 206, 93)">
@@ -41,7 +98,7 @@
         <span class="inline">WhatsApp</span>
     </a> -->
     <div class="properties fixed h-full w-full z-40 bg-[rgba(31,45,61,0.4)] hidden">
-        <div class="pb-5 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+        <div class="pb-5 text-center max-w-[960px] md:max-w-[1080px] mx-auto">
             <div class="m-5 bg-white md:h-auto h-full rounded-2xl flex flex-col overflow-hidden">
                 <div class="inline border-b py-5">
                     <h5 class="inline pl-5">Avaibable Properties</h5>
@@ -56,14 +113,14 @@
                                 <p>500.000 $</p>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="md:flex hidden flex-col justify-between">
                             <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="2.webp"></div>
                             <div>
                                 <h5>Some Location</h5>
                                 <p>400.000 $</p>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="md:flex hidden flex-col justify-between">
                             <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="3.webp"></div>
                             <div>
                                 <h5>Some Location</h5>
@@ -108,9 +165,9 @@
 
             <!-- Heading -->
 
-            <div class="mt-10 py-10 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="mt-10 pt-14 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
                 <div
-                    class="remote cursor-pointer bg-slate-200 mx-auto md:mx-0 w-4/5 min-w-fit max-w-[400px] rounded-3xl h-8 grid-rows-1 flex justify-between p-2 mb-5 align-middle">
+                    class="remote cursor-pointer bg-slate-200 mx-auto md:mx-0 w-4/5 min-w-fit max-w-[400px] rounded-3xl h-8 grid-rows-1 flex justify-between p-2 align-middle mb-7">
                     <div
                         class="leading-[1.05rem] text-[10px] xs:leading-[1rem] xs:text-[12px] w-fit px-3 h-full bg-accent rounded-full text-white mr-1">
                         New</div>
@@ -130,7 +187,7 @@
 
                 <h1 class="text-2xl font-medium pb-3 md:text-left">Turkish Citizenship by Investment</h1>
 
-                <h2 class="text-lg font-normal md:text-left">Full Service Provider - Concierge | Financials&Legals |
+                <h2 class="text-lg font-normal md:text-left">Full Service Provider - Concierge | Financials & Legals |
                     Property
                     Acquisitions</h2>
 
@@ -231,7 +288,7 @@
 
             <!-- Benefits -->
 
-            <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <div class="benefits pt-14 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
                 <div
                     class="badge bg-accent text-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
                     <span>Program Benefits
@@ -755,76 +812,83 @@
 
             <!-- Investment Options -->
 
-            <div class="bg-slate-800 w-full py-10 my-20 px-5">
+            <div class="investment pt-20">
 
-                <div class="max-w-[960px] md:max-w-[1080px] mx-auto">
+                <div class="bg-slate-800 w-full pb-10 pt-14 px-5">
 
-                    <div
-                        class="badge bg-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
-                        <span>Investment Options</span>
-                    </div>
+                    <div class="max-w-[960px] md:max-w-[1080px] mx-auto">
 
-                    <h5 class="text-lg text-white my-10">
-                        By far the most popular investment model for the Turkish program is to purchase property with a
-                        minimum value of $400,000. In 2019 more than six thousand main applicants from nearly 100
-                        countries chose to take this option, attracted by the very reasonable prices and good rental
-                        yields.
-                    </h5>
-
-                    <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
                         <div
-                            class="bg-white p-3 h-52 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center border-accent border-[5px] flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
-                            <div class="flex justify-center">
-                                <img src="home.svg" style="height:40px">
-                            </div>
-                            <h5 class="text-base">Property</h5>
-                            <p class="text-sm text-gray-400">Buy real estate or land with a minimum value of $400,000.
-                            </p>
-                            <a class="text-xs text-accent properties-tggl cursor-pointer">View properties</a>
+                            class="badge bg-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
+                            <span>Investment Options</span>
                         </div>
-                        <div
-                            class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
-                            <div class="flex justify-center">
-                                <img src="Bank.svg" style="height:40px">
+
+                        <h5 class="text-lg text-white my-10">
+                            By far the most popular investment model for the Turkish program is to purchase property
+                            with a
+                            minimum value of $400,000. In 2019 more than six thousand main applicants from nearly 100
+                            countries chose to take this option, attracted by the very reasonable prices and good rental
+                            yields.
+                        </h5>
+
+                        <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
+                            <div
+                                class="bg-white p-3 h-52 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center border-accent border-[5px] flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
+                                <div class="flex justify-center">
+                                    <img src="home.svg" style="height:40px">
+                                </div>
+                                <h5 class="text-base">Property</h5>
+                                <p class="text-sm text-gray-400">Buy real estate or land with a minimum value of
+                                    $400,000.
+                                </p>
+                                <a class="text-xs text-accent properties-tggl cursor-pointer">View properties</a>
                             </div>
-                            <h5 class="text-base">Bank Deposit</h5>
-                            <p class="text-sm text-gray-400">$500,000 deposit in a Turkish bank for a minimum of 3 years
-                            </p>
-                        </div>
-                        <div
-                            class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
-                            <div class="flex justify-center">
-                                <img src="buildings.svg" style="height:40px">
+                            <div
+                                class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
+                                <div class="flex justify-center">
+                                    <img src="Bank.svg" style="height:40px">
+                                </div>
+                                <h5 class="text-base">Bank Deposit</h5>
+                                <p class="text-sm text-gray-400">$500,000 deposit in a Turkish bank for a minimum of 3
+                                    years
+                                </p>
                             </div>
-                            <h5 class="text-base">Real Estate Trusts</h5>
-                            <p class="text-sm text-gray-400">Invest $500,000 in a Turkish REIT, or a venture capital
-                                fund.</p>
+                            <div
+                                class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
+                                <div class="flex justify-center">
+                                    <img src="buildings.svg" style="height:40px">
+                                </div>
+                                <h5 class="text-base">Real Estate Trusts</h5>
+                                <p class="text-sm text-gray-400">Invest $500,000 in a Turkish REIT, or a venture capital
+                                    fund.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="w-full flex justify-center mt-10">
-                        <a
-                            class="mb-4 contact cursor-pointer rounded-md w-fit bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-sm">
-                            <span>
-                                Talk to an expert
-                            </span>
-                            <span class="pl-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-arrow-right inline">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
+                        <div class="w-full flex justify-center mt-10">
+                            <a
+                                class="mb-4 contact cursor-pointer rounded-md w-fit bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-sm">
+                                <span>
+                                    Talk to an expert
+                                </span>
+                                <span class="pl-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-arrow-right inline">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
 
 
+                    </div>
                 </div>
+
             </div>
 
             <!-- Four easy steps to acquiring Turkish citizenship -->
 
-            <div class="max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="process max-w-[960px] md:max-w-[1080px] mx-auto px-5 py-20">
                 <div
                     class="badge bg-accent text-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
                     <span>Four easy steps to acquiring Turkish citizenship</span>
@@ -1362,11 +1426,11 @@
 
             </div>
 
-            <hr class="my-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <hr class="mt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
 
             <!-- Terms and Conditions -->
 
-            <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <div class="terms pt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
 
                 <h1 class="text-2xl">Terms and Conditions</h1>
 

@@ -13,11 +13,104 @@
 
 <body>
     <header class="z-40 fixed bg-white w-full py-2">
-        <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
-            <img class="w-28 inline logo cursor-pointer" src="/logo-ru.png" alt="">
-            <a class="float-right inline text-gray-500 text-sm leading-[1.6rem]" href="/en.html">EN</a>
+        <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto flex justify-between">
+            <div class="flex">
+                <div
+                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex md:hidden closed cursor-pointer">
+
+                    <div class="border-b-2 border-white-300 origin-center"></div>
+                    <div class="border-b-2 border-white-300 origin-center"></div>
+                    <div class="border-b-2 border-white-300 origin-center"></div>
+                </div>
+                <img class="w-28 inline logo cursor-pointer" src="/logo-ru.png" alt="">
+            </div>
+            <div class="hidden md:inline navigation">
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Преимущества</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Варианты инвестиций</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Процесс</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Условия</p>
+            </div>
+            <a class="lang float-right inline text-white rounded-sm w-9 text-xs leading-[1.6rem] bg-accent"
+                href="/en.html">
+                <div class="grid place-items-center w-full h-full">
+                    Eng
+                </div>
+            </a>
         </div>
     </header>
+
+    <div class="burger-menu hidden fixed h-full w-full bg-white z-39">
+        <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="pt-10">
+                <div class="py-4 text-gray-400 text-sm">
+                    Преимущества
+                </div>
+                <div class="py-4 text-gray-400 text-sm">
+                    Варианты инвестиций
+                </div>
+                <div class="py-4 text-gray-400 text-sm">
+                    Процесс
+                </div>
+                <div class="py-4 text-gray-400 text-sm">
+                    Условия
+                </div>
+                <div class="w-full">
+                    <a
+                        class="mb-4 md:mr-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-3xl w-fit mx-auto block text-center mt-3">
+                        <span>
+                            Call about your financial freedom today
+                        </span>
+                        <span class="pl-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-arrow-right inline">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white">
+        <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="navigation pt-10">
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Преимущества
+                </div>
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Варианты инвестиций
+                </div>
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Процесс
+                </div>
+                <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
+                    Условия
+                </div>
+                <div class="w-full">
+                    <a
+                        class="mb-4 md:mr-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-md w-fit mx-auto block text-center mt-3">
+                        <span>
+                            Call about your financial freedom today
+                        </span>
+                        <span class="pl-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-arrow-right inline">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <a target="_blank"
         class="contact cursor-pointer z-20 fixed bottom-0 right-0 rounded-full bg-white w-fit shadow-2xl m-2 p-3 pt-2 text-[#0180c1] font-base">
         <div class="inline pr-1" color="rgb(79, 206, 93)">
@@ -41,10 +134,10 @@
         <span class="inline">WhatsApp</span>
     </a> -->
     <div class="properties fixed h-full w-full z-40 bg-[rgba(31,45,61,0.4)] hidden">
-        <div class="max-w-[760px] md:max-w-[960px] mx-auto z-50 h-[90%]">
+        <div class="pb-5 text-center max-w-[960px] md:max-w-[1080px] mx-auto">
             <div class="m-5 bg-white md:h-auto h-full rounded-2xl flex flex-col overflow-hidden">
                 <div class="inline border-b py-5">
-                    <h5 class="inline pl-5">Доступная Недвижимость</h5>
+                    <h5 class="inline pl-5">Avaibable Properties</h5>
                     <p class="properties-tggl float-right cursor-pointer px-5">×</p>
                 </div>
                 <div class="overflow-scroll">
@@ -56,14 +149,14 @@
                                 <p>500.000 $</p>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="md:flex hidden flex-col justify-between">
                             <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="2.webp"></div>
                             <div>
                                 <h5>Some Location</h5>
                                 <p>400.000 $</p>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
+                        <div class="md:flex hidden flex-col justify-between">
                             <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="3.webp"></div>
                             <div>
                                 <h5>Some Location</h5>
@@ -95,7 +188,7 @@
                     <div
                         class="grid bg-gradient-to-t from-gray-200 h-20 md:col-span-3 place-content-center rounded-b-2xl">
                         <div class="text-gray-600 contact cursor-pointer">
-                            смотреть больше
+                            see more
                         </div>
                     </div>
                 </div>
@@ -109,12 +202,15 @@
 
             <!-- Heading -->
 
-            <div class="mt-10 py-10 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="mt-10 py-14 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
                 <div
                     class="remote cursor-pointer bg-slate-200 mx-auto md:mx-0 w-4/5 min-w-fit max-w-[400px] rounded-3xl h-8 grid-rows-1 flex justify-between p-2 mb-5 align-middle">
-                    <div class="leading-[1.05rem] text-[10px] xs:leading-[1rem] xs:text-[12px] w-fit px-3 h-full bg-accent rounded-full text-white mr-1">Новое</div>
+                    <div
+                        class="leading-[1.05rem] text-[10px] xs:leading-[1rem] xs:text-[12px] w-fit px-3 h-full bg-accent rounded-full text-white mr-1">
+                        Новое</div>
                     <div class="text-[12px] xs:text-[14px] leading-[1rem] w-fit mr-1">Удаленная обработка.</div>
-                    <div class="text-[12px] xs:text-[14px] leading-[1rem] w-fit"><span class="underline">Узнавать больше</span>
+                    <div class="text-[12px] xs:text-[14px] leading-[1rem] w-fit"><span class="underline">Узнавать
+                            больше</span>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
                                 fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
@@ -151,10 +247,11 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Real estate investments with 8% rental guarantee</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Инвестиции в недвижимость с
+                            гарантией аренды 8%</p>
                     </div>
                     <div class="flex pb-2">
-                        <div>                            
+                        <div>
                             <div class="bg-slate-800 rounded-full w-5 h-5 grid place-items-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"
                                     fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -164,7 +261,8 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Re-sell property after 3 years</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Перепродать недвижимость
+                            через 3 года</p>
                     </div>
                     <div class="flex pb-2">
                         <div>
@@ -180,7 +278,8 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Offices across 80 countries to assist you</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Офисы в 80 странах, чтобы
+                            помочь вам</p>
                     </div>
                     <div class="flex">
                         <div>
@@ -194,7 +293,8 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Complex VAT exemptions taken care of by our lawyers</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Наши юристы позаботятся о
+                            сложных льготах по НДС</p>
                     </div>
                 </div>
 
@@ -228,7 +328,7 @@
 
             <!-- Benefits -->
 
-            <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <div class="benefits pt-14 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
                 <div
                     class="badge bg-accent text-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
                     <span>Преимущества программы
@@ -762,81 +862,87 @@
 
             <!-- Investment Options -->
 
-            <div class="bg-slate-800 w-full py-10 my-20 px-5">
+            <div class="investment pt-20">
+                <div class="bg-slate-800 w-full pb-10 pt-14 px-5">
 
-                <div class="max-w-[960px] md:max-w-[1080px] mx-auto">
+                    <div class="max-w-[960px] md:max-w-[1080px] mx-auto">
 
-                    <div
-                        class="badge bg-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
-                        <span>Варианты Инвестирования</span>
-                    </div>
-
-                    <h5 class="text-lg text-white my-10">
-                        На сегодняшний день самой популярной инвестиционной моделью для турецкой программы является
-                        покупка недвижимости с
-                        минимальной стоимостью 400 000 долларов. В 2019 году более шести тысяч основных претендентов из
-                        почти 100
-                        страны выбрали этот вариант, привлеченные очень разумными ценами и хорошей арендой
-                        доходность.
-                    </h5>
-
-                    <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
                         <div
-                            class="bg-white p-3 h-52 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center border-accent border-[5px] flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
-                            <div class="flex justify-center">
-                                <img src="home.svg" style="height:40px">
-                            </div>
-                            <h5 class="text-base">Собственность</h5>
-                            <p class="text-sm text-gray-400">Купите недвижимость или земельный участок с минимальной
-                                стоимостью 400 000 долларов.
-                            </p>
-                            <a class="text-xs text-accent properties-tggl cursor-pointer">Просмотр недвижимости</a>
+                            class="badge bg-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
+                            <span>Варианты Инвестирования</span>
                         </div>
-                        <div
-                            class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
-                            <div class="flex justify-center">
-                                <img src="Bank.svg" style="height:40px">
+
+                        <h5 class="text-lg text-white my-10">
+                            На сегодняшний день самой популярной инвестиционной моделью для турецкой программы является
+                            покупка недвижимости с
+                            минимальной стоимостью 400 000 долларов. В 2019 году более шести тысяч основных претендентов
+                            из
+                            почти 100
+                            страны выбрали этот вариант, привлеченные очень разумными ценами и хорошей арендой
+                            доходность.
+                        </h5>
+
+                        <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
+                            <div
+                                class="bg-white p-3 h-52 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center border-accent border-[5px] flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
+                                <div class="flex justify-center">
+                                    <img src="home.svg" style="height:40px">
+                                </div>
+                                <h5 class="text-base">Собственность</h5>
+                                <p class="text-sm text-gray-400">Купите недвижимость или земельный участок с минимальной
+                                    стоимостью 400 000 долларов.
+                                </p>
+                                <a class="text-xs text-accent properties-tggl cursor-pointer">Просмотр недвижимости</a>
                             </div>
-                            <h5 class="text-base">Банковский Депозит</h5>
-                            <p class="text-sm text-gray-400">депозит в размере 500 000 долларов США в турецком банке
-                                минимум на 3 года
-                            </p>
-                        </div>
-                        <div
-                            class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
-                            <div class="flex justify-center">
-                                <img src="buildings.svg" style="height:40px">
+                            <div
+                                class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
+                                <div class="flex justify-center">
+                                    <img src="Bank.svg" style="height:40px">
+                                </div>
+                                <h5 class="text-base">Банковский Депозит</h5>
+                                <p class="text-sm text-gray-400">депозит в размере 500 000 долларов США в турецком банке
+                                    минимум на 3 года
+                                </p>
                             </div>
-                            <h5 class="text-base">Трасты Недвижимости</h5>
-                            <p class="text-sm text-gray-400">Инвестируйте 500 000 долларов в турецкую REIT или венчурный
-                                капитал
-                                фонд.</p>
+                            <div
+                                class="bg-white p-5 h-44 shadow-[0_1rem_3rem_rgba(31,45,61,0.13)] rounded-2xl text-center flex flex-col justify-between w-full hover:-translate-y-2 transition-all">
+                                <div class="flex justify-center">
+                                    <img src="buildings.svg" style="height:40px">
+                                </div>
+                                <h5 class="text-base">Трасты Недвижимости</h5>
+                                <p class="text-sm text-gray-400">Инвестируйте 500 000 долларов в турецкую REIT или
+                                    венчурный
+                                    капитал
+                                    фонд.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="w-full flex justify-center mt-10">
-                        <a
-                            class="mb-4 contact cursor-pointer rounded-md w-fit bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-sm">
-                            <span>
-                                Поговорите с экспертом
-                            </span>
-                            <span class="pl-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-arrow-right inline">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
+                        <div class="w-full flex justify-center mt-10">
+                            <a
+                                class="mb-4 contact cursor-pointer rounded-md w-fit bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-sm">
+                                <span>
+                                    Поговорите с экспертом
+                                </span>
+                                <span class="pl-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-arrow-right inline">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
 
 
+                    </div>
                 </div>
             </div>
 
+
+
             <!-- Four easy steps to acquiring Turkish citizenship -->
 
-            <div class="max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="process max-w-[960px] md:max-w-[1080px] mx-auto px-5 py-20">
                 <div
                     class="badge bg-accent text-white rounded-full w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
                     <span>Четыре простых шага к получению турецкого гражданства</span>
@@ -1379,9 +1485,9 @@
                 </div>
             </div>
 
-            <hr class="my-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <hr class="mt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
 
-            <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <div class="terms pt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
 
 
                 <!-- Terms and Conditions -->
