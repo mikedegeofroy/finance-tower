@@ -89,44 +89,44 @@ function hooks() {
     })
 
     $($(".navigation").find("p")[0]).click(function () {
-        $(".benefits")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#benefits")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     $($(".navigation").find("p")[1]).click(function () {
-        $(".investment")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#investment")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     $($(".navigation").find("p")[2]).click(function () {
-        $(".process")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#process")[0].scrollIntoView({ behavior: 'smooth' });
     })
     
     $($(".navigation").find("p")[3]).click(function () {
-        $(".terms")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#terms")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     $($(".navigation").find("div")[0]).click(function () {
         closeBurger()
-        $(".benefits")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#benefits")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     $($(".navigation").find("div")[1]).click(function () {
         closeBurger()
-        $(".investment")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#investment")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     $($(".navigation").find("div")[2]).click(function () {
         closeBurger()
-        $(".process")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#process")[0].scrollIntoView({ behavior: 'smooth' });
     })
     
     $($(".navigation").find("div")[3]).click(function () {
         closeBurger()
-        $(".terms")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#terms")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     $(".remote").click(function () {
         // document.getElementsByClassName(".faq").scrollIntoView();
-        $(".faq")[0].scrollIntoView({ behavior: 'smooth' });
+        $("#faq")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     let proptab = $(".properties")
