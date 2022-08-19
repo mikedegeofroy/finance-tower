@@ -13,7 +13,7 @@ $(document).scroll((yo) => {
 
     if ($(document).scrollTop() > 15 && classes.indexOf('closed') > 0 && $(window).width() < 768) {
         $('header').addClass("shadow-sm")
-    } else if($(window).width() > 768 && $(document).scrollTop() > 15){
+    } else if ($(window).width() > 768 && $(document).scrollTop() > 15) {
         $('header').addClass("shadow-sm")
     } else {
         $('header').removeClass("shadow-sm")
@@ -104,7 +104,7 @@ function hooks() {
     $($(".navigation").find("p")[2]).click(function () {
         $("#process")[0].scrollIntoView({ behavior: 'smooth' });
     })
-    
+
     $($(".navigation").find("p")[3]).click(function () {
         $("#terms")[0].scrollIntoView({ behavior: 'smooth' });
     })
@@ -123,15 +123,10 @@ function hooks() {
         closeBurger()
         $("#process")[0].scrollIntoView({ behavior: 'smooth' });
     })
-    
+
     $($(".navigation").find("div")[3]).click(function () {
         closeBurger()
         $("#terms")[0].scrollIntoView({ behavior: 'smooth' });
-    })
-
-    $(".remote").click(function () {
-        // document.getElementsByClassName(".faq").scrollIntoView();
-        $("#faq")[0].scrollIntoView({ behavior: 'smooth' });
     })
 
     let proptab = $(".properties")
@@ -158,8 +153,6 @@ function fuqQuestions() {
     $(".fuq").each(function (index) {
 
         let initialHeight = $(this).outerHeight()
-
-        // console.log(this, initialHeight)
 
         let ans = $(this).find(".answer")
 
@@ -189,6 +182,38 @@ function fuqQuestions() {
                 ans.addClass("hid")
             }
 
+        })
+
+        $(window).resize(() => {
+            $(toggleHeader).off('click')
+
+            ans.parent().css('height', "auto")
+
+            openHeight = ans.parent().outerHeight()
+
+            ans.addClass('hidden')
+
+            initialHeight = ans.parent().outerHeight()
+
+            ans.parent().css('height', initialHeight)
+
+            ans.removeClass('hidden')
+
+            $(toggleHeader).click(function () {
+
+                let classes = ans.attr('class').split(' ')
+
+                if (classes.indexOf('hid') >= 0) {
+                    ans.removeClass('hid')
+                    toggleButton.text("-")
+                    ans.parent().css('height', openHeight)
+                } else {
+                    ans.parent().css('height', initialHeight)
+                    toggleButton.text("+")
+                    ans.addClass("hid")
+                }
+
+            })
         })
 
     });
