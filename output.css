@@ -642,6 +642,11 @@ html,main {
   margin-bottom: 0.5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -872,26 +877,6 @@ html,main {
   max-width: 400px;
 }
 
-.max-w-\[360px\] {
-  max-width: 360px;
-}
-
-.max-w-\[460px\] {
-  max-width: 460px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
-}
-
-.max-w-\[600px\] {
-  max-width: 600px;
-}
-
-.max-w-\[550px\] {
-  max-width: 550px;
-}
-
 .origin-center {
   transform-origin: center;
 }
@@ -902,6 +887,10 @@ html,main {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .select-none {
@@ -1063,11 +1052,6 @@ html,main {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t {
@@ -1387,6 +1371,10 @@ html,main {
           text-decoration-line: underline;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1450,34 +1438,6 @@ html,main {
 }
 
 @media (min-width: 640px) {
-  .sm\:max-w-\[960px\] {
-    max-width: 960px;
-  }
-
-  .sm\:max-w-\[860px\] {
-    max-width: 860px;
-  }
-
-  .sm\:max-w-\[760px\] {
-    max-width: 760px;
-  }
-
-  .sm\:max-w-\[360px\] {
-    max-width: 360px;
-  }
-
-  .sm\:max-w-\[9360px\] {
-    max-width: 9360px;
-  }
-
-  .sm\:max-w-\[560px\] {
-    max-width: 560px;
-  }
-
-  .sm\:max-w-\[750px\] {
-    max-width: 750px;
-  }
-
   .sm\:max-w-\[540px\] {
     max-width: 540px;
   }
@@ -1551,20 +1511,12 @@ html,main {
 }
 
 @media (min-width: 1024px) {
-  .lg\:max-w-\[1080px\] {
-    max-width: 1080px;
-  }
-
   .lg\:max-w-\[960px\] {
     max-width: 960px;
   }
 }
 
 @media (min-width: 475px) {
-  .xs\:max-w-\[750px\] {
-    max-width: 750px;
-  }
-
   .xs\:text-\[12px\] {
     font-size: 12px;
   }

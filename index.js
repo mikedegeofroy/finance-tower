@@ -11,7 +11,9 @@ $(document).ready(function () {
 $(document).scroll((yo) => {
     let classes = $(".burger-menu").attr('class').split(' ')
 
-    if ($(document).scrollTop() > 15 && classes.indexOf('closed') > 0) {
+    if ($(document).scrollTop() > 15 && classes.indexOf('closed') > 0 && $(window).width() < 768) {
+        $('header').addClass("shadow-sm")
+    } else if($(window).width() > 768 && $(document).scrollTop() > 15){
         $('header').addClass("shadow-sm")
     } else {
         $('header').removeClass("shadow-sm")
@@ -21,7 +23,7 @@ $(document).scroll((yo) => {
 function hooks() {
     $(".contact").each(function () {
         $(this).click(function () {
-            window.open('https://t.me/mikedegeofroy', '_blank');
+            window.open('https://t.me/financial_fortress', '_blank');
         })
     })
 
@@ -46,6 +48,7 @@ function hooks() {
         $(".burger").removeClass('closed')
         $("header").removeClass('shadow-sm')
         $(".burger").addClass('open')
+        $(".navigation").animate({ opacity: 1 }, 250)
 
         $('.burger-menu').removeClass('closed')
         $('.burger-menu').animate({ top: '+=400' }, 250)
@@ -71,6 +74,8 @@ function hooks() {
         if ($(document).scrollTop() > 15) {
             $("header").addClass('shadow-sm')
         }
+
+        $(".navigation").animate({ opacity: 0 }, 250)
 
         $('.burger-menu').addClass('closed')
         $('.burger-menu').animate({ top: '-=400' }, 250)
