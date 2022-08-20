@@ -17,6 +17,15 @@
 
         gtag('config', 'G-FJFMGHNNH4');
     </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -24,52 +33,51 @@
         <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto flex justify-between">
             <div class="flex">
                 <div
-                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex md:hidden closed cursor-pointer">
+                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex closed cursor-pointer">
 
                     <div class="border-b-2 border-white-300 origin-center"></div>
                     <div class="border-b-2 border-white-300 origin-center"></div>
                     <div class="border-b-2 border-white-300 origin-center"></div>
                 </div>
-                <a href="/en.html">
-                    <img class="w-20 inline cursor-pointer" src="/logo.png" alt="">
+                <a class="w-28 inline cursor-pointer" href="/ru.html">
+                    <img class="w-full h-full" src="/logo-ru.png" alt="">
                 </a>
             </div>
-            <div class="hidden md:inline navigation">
-                <a href="/en.html#benefits" class="inline text-sm px-4 text-gray-400 cursor-pointer">Benefits</a>
-                <a href="/en.html#invest" class="inline text-sm px-4 text-gray-400 cursor-pointer">Investment
-                    Options</a>
-                <a href="/en.html#process" class="inline text-sm px-4 text-gray-400 cursor-pointer">Process</a>
-                <a href="/en.html#terms" class="inline text-sm px-4 text-gray-400 cursor-pointer">Terms</a>
+            <div class="hidden md:inline navigation opacity-0">
+                <a href="/ru.html#benefits" class="inline text-sm px-4 text-gray-400 cursor-pointer">Преимущества</a>
+                <a href="/ru.html#investment" class="inline text-sm px-4 text-gray-400 cursor-pointer">Варианты Инвестиций</a>
+                <a href="/ru.html#process" class="inline text-sm px-4 text-gray-400 cursor-pointer">Процесс</a>
+                <a href="/ru.html#terms" class="inline text-sm px-4 text-gray-400 cursor-pointer">Условия</a>
             </div>
             <a class="lang float-right inline text-white rounded-sm w-9 text-xs leading-[1.6rem] bg-accent"
-                href="/ru.html">
+                href="/en/disclaimer.html">
                 <div class="grid place-items-center w-full h-full">
-                    Ru
+                    En
                 </div>
             </a>
         </div>
     </header>
 
-    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white">
+    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white md:hidden">
         <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
             <div class="navigation pt-10">
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
-                    <a href="/en.html#benefits">Benefits</a>
+                    <a href="/ru.html#benefits">Преимущества</a>
                 </div>
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
-                    <a href="/en.html#investment">Investment Options</a>
+                    <a href="/ru.html#investment">Варианты Инвестиций</a>
                 </div>
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
-                    <a href="/en.html#process">Process</a>
+                    <a href="/ru.html#process">Процесс</a>
                 </div>
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
-                    <a href="/en.html#terms">Terms</a>
+                    <a href="/ru.html#terms">Условия</a>
                 </div>
                 <div class="w-full">
                     <a
                         class="mb-4 md:mr-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-md w-fit mx-auto block text-center mt-3">
                         <span>
-                            Call about your financial freedom today
+                            Позвоните по поводу вашей финансовой свободы сегодня 
                         </span>
                         <span class="pl-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
@@ -105,94 +113,92 @@
 
             <div class="terms pt-20 px-5 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] mx-auto">
 
-                <h1 class="text-2xl text-center mb-5">Disclaimers</h1>
+                <h1 class="text-2xl text-center mb-5">Отказ от ответственности</h1>
 
-                <h5 class="pt-5 text-xl font-normal">Ownership of Copyright</h5>
+                <h5 class="pt-5 text-xl font-normal">Авторское право</h5>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    The copyright in this website and the material on this website (including without limitation the
-                    text, computer code, artwork, photographs, images, music, audio material, video material and
-                    audiovisual material on this website) is owned by Financial Fortress.
+                    Авторские права на этот веб-сайт и материалы на этом веб-сайте (включая, помимо прочего, текст, компьютерный код, иллюстрацию, фотографии, изображения, музыку, аудиоматериалы, видеоматериалы и аудиовизуальные материалы на этом веб-сайте) принадлежат Financial Fortress.
                 </p>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    The copyright in this website and the material on this website (including without limitation the
-                    text,
-                    computer code, artwork, photographs, images, music, audio material, video material and audiovisual
-                    material on this website) is owned by Financial Fortress.
+                    Авторские права на этот веб-сайт и материалы на этом веб-сайте (включая, помимо прочего,
+                    текст,
+                    компьютерный код, произведение искусства, фотографии, изображения, музыка, аудиоматериалы, видеоматериалы и аудиовизуальные материалы
+                    материалы на этом веб-сайте) принадлежит Financial Fortress.
                 </p>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    This website is provided “as is” without any representations or warranties, express or implied.
-                    Financial Fortress makes no representations or warranties in relation to this website or the information and
-                    materials provided on this website.
+                    Этот веб-сайт предоставляется «как есть» без каких-либо заявлений или гарантий, явных или подразумеваемых.
+                    Financial Fortress не делает никаких заявлений или гарантий в отношении этого веб-сайта или информации и
+                    материалов, представленных на этом сайте.
                 </p>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    Without prejudice to the generality of the foregoing paragraph, Financial Fortress does not warrant
-                    that:
-                    this website will be constantly available, or available at all; or the information on this website
-                    is
-                    complete, true, accurate or non-misleading.
+                    Без ущерба для общего характера предыдущего абзаца, Financial Fortress не гарантирует
+                    что:
+                    этот веб-сайт будет постоянно или вообще доступен; или информация на этом сайте
+                    является
+                    полным, правдивым, точным или не вводящим в заблуждение.
                 </p>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    Nothing on this website constitutes, or is meant to constitute, advice of any kind. [If you require
-                    advice in relation to any [legal, financial or medical] matter you should consult an appropriate
-                    professional.]
+                    Ничто на этом веб-сайте не является и не предназначено для предоставления каких-либо советов. [Если вам требуется
+                    совет по любому [юридическому, финансовому или медицинскому] вопросу, вам следует проконсультироваться с соответствующим
+                    профессиональный.]
                 </p>
 
-                <h5 class="pt-5 text-xl font-normal">Limitations of Liability</h5>
+                <h5 class="pt-5 text-xl font-normal">Ограничения ответственности</h5>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    Financial Fortress will not be liable to you (whether under the law of contact, the law of torts or
-                    otherwise) in relation to the contents of, or use of, or otherwise in connection with, this website:
-                    [to the extent that the website is provided free-of charge, for any direct loss;] for any indirect,
-                    special or consequential loss; or for any business losses, loss of revenue, income, profits or
-                    anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, or
-                    loss or corruption of information or data. These limitations of liability apply even if Financial Fortress
-                    has been expressly advised of the potential loss.
+                    Financial Fortress не будет нести перед вами ответственности (будь то в соответствии с законом о контактных лицах, деликтным законодательством или
+                    иным образом) в отношении содержания, использования или иным образом в связи с этим веб-сайтом:
+                    [в той степени, в которой веб-сайт предоставляется бесплатно, за любые прямые убытки;] за любые косвенные,
+                    особый или косвенный убыток; или за любые коммерческие убытки, потерю дохода, дохода, прибыли или
+                    ожидаемая экономия, потеря контрактов или деловых отношений, потеря репутации или деловой репутации, или
+                    потеря или повреждение информации или данных. Эти ограничения ответственности применяются, даже если Financial Fortress
+                    был прямо уведомлен о возможных убытках.
                 </p>
 
-                <h5 class="pt-5 text-xl font-normal">Exceptions</h5>
+                <h5 class="pt-5 text-xl font-normal">Исключения</h5>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    Nothing in this website disclaimer will exclude or limit any warranty implied by law that it would
-                    be unlawful to exclude or limit; and nothing in this website disclaimer will exclude or limit
-                    Financial Fortress liability in respect of any: death or personal injury caused by Financial Fortress
-                    negligence; fraud or fraudulent misrepresentation on the part of Financial Fortress or matter which it
-                    would be illegal or unlawful for Financial Fortress to exclude or limit, or to attempt or purport to
-                    exclude or limit, its liability.
+                    Ничто в этом заявлении об отказе от ответственности не исключает и не ограничивает какие-либо гарантии, подразумеваемые законом, что
+                    быть незаконным для исключения или ограничения; и ничто на этом сайте не будет исключать или ограничивать
+                    Ответственность Financial Fortress в отношении: смерти или телесных повреждений, причиненных Financial Fortress
+                    небрежность; мошенничество или умышленное введение в заблуждение со стороны Financial Fortress или вопрос, который
+                    было бы незаконным или незаконным для Financial Fortress исключить или ограничить, или попытаться или подразумевать
+                    исключить или ограничить свою ответственность.
                 </p>
 
-                <h5 class="pt-5 text-xl font-normal">Reasonableness</h5>
+                <h5 class="pt-5 text-xl font-normal">Разумность</h5>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    By using this website, you agree that the exclusions and limitations of liability set out in this
-                    website disclaimer are reasonable. If you do not think they are reasonable, you must not use this
-                    website.
+                    Используя этот веб-сайт, вы соглашаетесь с тем, что исключения и ограничения ответственности, изложенные в настоящем
+                    Отказ от ответственности на веб-сайте является разумным. Если вы не считаете их разумными, вы не должны использовать это
+                    Веб-сайт.
                 </p>
 
-                <h5 class="pt-5 text-xl font-normal">Other Parties</h5>
+                <h5 class="pt-5 text-xl font-normal">Другие стороны</h5>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    [You accept that, as a limited liability entity, Financial Fortress has an interest in limiting the
-                    personal liability of its officers and employees. You agree that you will not bring any claim
-                    personally against Financial Fortress’s officers or employees in respect of any losses you suffer in
-                    connection with the website.]
+                    [Вы соглашаетесь с тем, что, как организация с ограниченной ответственностью, Financial Fortress заинтересована в ограничении
+                    личная ответственность его должностных лиц и сотрудников. Вы соглашаетесь с тем, что не будете предъявлять никаких претензий
+                    лично против должностных лиц или сотрудников Financial Fortress в отношении любых убытков, которые вы понесли в
+                    связь с веб-сайтом.]
                 </p>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    [Without prejudice to the foregoing paragraph,] you agree that the limitations of warranties and
-                    liability set out in this website disclaimer will protect Financial Fortress officers, employees,
-                    agents, subsidiaries, successors, assigns and sub-contractors as well as Financial Fortress.
+                    [Без ущерба для предыдущего параграфа] вы соглашаетесь с тем, что ограничения гарантий и
+                    ответственность, изложенная в заявлении об отказе от ответственности на этом веб-сайте, защитит сотрудников, сотрудников и
+                    агенты, дочерние компании, правопреемники, правопреемники и субподрядчики, а также Financial Fortress.
                 </p>
 
-                <h5 class="pt-5 text-xl font-normal">Unenforceable Provisions</h5>
+                <h5 class="pt-5 text-xl font-normal">Неисполнимые положения</h5>
 
                 <p class="text-sm text-gray-400 pt-5">
-                    If any provision of this website disclaimer is, or is found to be, unenforceable under applicable
-                    law, that will not affect the enforceability of the other provisions of this website disclaimer.
+                    Если какое-либо положение отказа от ответственности на этом веб-сайте является или будет признано неисполнимым в соответствии с применимыми
+                    закона, что не повлияет на исковую силу других положений данного заявления об отказе от ответственности.
                 </p>
             </div>
 
@@ -201,32 +207,32 @@
             <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto my-20 grid grid-cols-3 gap-5 gap-y-10">
                 <div class="p-4 bg-white border border-b-0  shadow-sm rounded-2xl col-span-3">
                     <img alt="Image placeholder" src="../turkey.svg" style="width: 30px;">
-                    <h5 class="text-sm font-medium pt-2">Turkish Citizenship by Investment</h5>
-                    <p class="text-xs text-gray-400 pt-2">We assist you from application until approval.</p>
-                    <a class="text-xs contact cursor-pointer text-accent">Talk to an expert</a>
+                    <h5 class="text-sm font-medium pt-2">Гражданство Турции за инвестиции</h5>
+                    <p class="text-xs text-gray-400 pt-2">Мы помогаем вам от подачи заявки до утверждения.</p>
+                    <a class="text-xs contact cursor-pointer text-accent">Поговорите с экспертом</a>
                 </div>
 
                 <div>
-                    <h5 class="text-xs font-medium pb-2">Links</h5>
+                    <h5 class="text-xs font-medium pb-2">Ссылки</h5>
                     <a class="text-xs text-gray-400 block hover:underline py-1"
-                        href="/en/disclaimer.html">Disclaimer</a>
-                    <a class="text-xs text-gray-400 block hover:underline py-1" href="/en/privacy.html">Privacy
-                        Policy</a>
-                    <a class="text-xs text-gray-400 block hover:underline py-1" href="/en/terms.html">Terms and
-                        Conditions</a>
+                        href="/ru/disclaimer.html">Оговорка</a>
+                    <a class="text-xs text-gray-400 block hover:underline py-1" href="/ru/privacy.html">Политика
+                        Конфиденциальности</a>
+                    <a class="text-xs text-gray-400 block hover:underline py-1" href="/ru/terms.html">Условия и
+                        Положения</a>
                 </div>
 
                 <div>
-                    <h5 class="text-xs font-medium pb-2">Contact</h5>
-                    <a class="text-xs text-gray-400 block hover:underline py-1" href="">Email</a>
+                    <h5 class="text-xs font-medium pb-2">Контакт</h5>
+                    <a class="text-xs text-gray-400 block hover:underline py-1" href="mailto:info@financialfortress.ru">Email</a>
                     <!-- <a class="text-xs text-gray-400 block hover:underline py-1" href="">WhatsApp</a> -->
                     <a class="contact text-xs text-gray-400 block hover:underline py-1" href="">Telegram</a>
                 </div>
 
                 <div>
-                    <h5 class="text-xs font-medium pb-2">Address</h5>
-                    <a class="text-xs text-gray-400 block hover:underline py-1" href="">Nevsky Prospekt, 63,
-                        Saint-Petersburg, 191025, Russia</a>
+                    <h5 class="text-xs font-medium pb-2">Адрес</h5>
+                    <a class="text-xs text-gray-400 block hover:underline py-1" href="">Невский пр-кт, д63,
+                        Санкт-Петербург, 191025, Россия</a>
                 </div>
             </div>
 

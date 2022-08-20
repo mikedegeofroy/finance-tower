@@ -17,6 +17,16 @@
 
         gtag('config', 'G-FJFMGHNNH4');
     </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -24,7 +34,7 @@
         <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto flex justify-between">
             <div class="flex">
                 <div
-                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex md:hidden closed cursor-pointer">
+                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex closed cursor-pointer">
 
                     <div class="border-b-2 border-white-300 origin-center"></div>
                     <div class="border-b-2 border-white-300 origin-center"></div>
@@ -32,65 +42,29 @@
                 </div>
                 <img class="w-28 inline logo cursor-pointer" src="/logo-ru.png" alt="">
             </div>
-            <div class="hidden md:inline navigation">
+            <div class="hidden md:inline navigation opacity-0">
                 <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Преимущества</p>
-                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Варианты инвестиций</p>
+                <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Варианты Инвестиций</p>
                 <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Процесс</p>
                 <p class="inline text-sm px-4 text-gray-400 cursor-pointer">Условия</p>
             </div>
             <a class="lang float-right inline text-white rounded-sm w-9 text-xs leading-[1.6rem] bg-accent"
                 href="/en.html">
                 <div class="grid place-items-center w-full h-full">
-                    Eng
+                    En
                 </div>
             </a>
         </div>
     </header>
 
-    <div class="burger-menu hidden fixed h-full w-full bg-white z-39">
-        <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
-            <div class="pt-10">
-                <div class="py-4 text-gray-400 text-sm">
-                    Преимущества
-                </div>
-                <div class="py-4 text-gray-400 text-sm">
-                    Варианты инвестиций
-                </div>
-                <div class="py-4 text-gray-400 text-sm">
-                    Процесс
-                </div>
-                <div class="py-4 text-gray-400 text-sm">
-                    Условия
-                </div>
-                <div class="w-full">
-                    <a
-                        class="mb-4 md:mr-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-3xl w-fit mx-auto block text-center mt-3">
-                        <span>
-                            Call about your financial freedom today
-                        </span>
-                        <span class="pl-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-arrow-right inline">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white">
+    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white md:hidden">
         <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
             <div class="navigation pt-10">
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
                     Преимущества
                 </div>
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
-                    Варианты инвестиций
+                    Варианты Инвестиций
                 </div>
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
                     Процесс
@@ -100,9 +74,9 @@
                 </div>
                 <div class="w-full">
                     <a
-                        class="mb-4 md:mr-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-md w-fit mx-auto block text-center mt-3">
+                        class="mb-4 contact cursor-pointer bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-xs rounded-md w-fit mx-auto block text-center mt-3">
                         <span>
-                            Call about your financial freedom today
+                            Позвоните по поводу вашей финансовой свободы сегодня 
                         </span>
                         <span class="pl-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
@@ -130,95 +104,21 @@
         </div>
         <span class="inline">Telegram</span>
     </a>
-    <!-- <a target="_blank" class="contact cursor-pointer z-20 fixed bottom-0 right-0 rounded-full bg-white w-fit shadow-2xl m-2 p-3 pt-2 text-green-500 font-base">
-        <div class="inline pr-1" color="rgb(79, 206, 93)">
-            <svg class="inline h-5 w-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 90 90" fill="#4FCE5D">
-                <path
-                    d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z">
-                </path>
-            </svg>
-        </div>
-        <span class="inline">WhatsApp</span>
-    </a> -->
-    <div class="properties fixed h-full w-full z-40 bg-[rgba(31,45,61,0.4)] hidden">
-        <div class="pb-5 text-center max-w-[960px] md:max-w-[1080px] mx-auto">
-            <div class="m-5 bg-white md:h-auto h-full rounded-2xl flex flex-col overflow-hidden">
-                <div class="inline border-b py-5">
-                    <h5 class="inline pl-5">Avaibable Properties</h5>
-                    <p class="properties-tggl float-right cursor-pointer px-5">×</p>
-                </div>
-                <div class="overflow-scroll">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 px-5">
-                        <div class="flex flex-col justify-between">
-                            <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="1.webp"></div>
-                            <div>
-                                <h5>Some Location</h5>
-                                <p>500.000 $</p>
-                            </div>
-                        </div>
-                        <div class="md:flex hidden flex-col justify-between">
-                            <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="2.webp"></div>
-                            <div>
-                                <h5>Some Location</h5>
-                                <p>400.000 $</p>
-                            </div>
-                        </div>
-                        <div class="md:flex hidden flex-col justify-between">
-                            <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="3.webp"></div>
-                            <div>
-                                <h5>Some Location</h5>
-                                <p>390.000 $</p>
-                            </div>
-                        </div>
-                        <div class="md:flex hidden flex-col justify-between">
-                            <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="4.webp"></div>
-                            <div>
-                                <h5>Some Location</h5>
-                                <p>530.000 $</p>
-                            </div>
-                        </div>
-                        <div class="md:flex hidden flex-col justify-between">
-                            <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="5.webp"></div>
-                            <div>
-                                <h5>Some Location</h5>
-                                <p>600.000 $</p>
-                            </div>
-                        </div>
-                        <div class="md:flex hidden flex-col justify-between">
-                            <div class="rounded-md overflow-hidden h-full"><img class="min-h-full" src="6.webp"></div>
-                            <div>
-                                <h5>Some Location</h5>
-                                <p>440.000 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="grid bg-gradient-to-t from-gray-200 h-20 md:col-span-3 place-content-center rounded-b-2xl">
-                        <div class="text-gray-600 contact cursor-pointer">
-                            see more
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <main class="overflow-hidden">
         <div class="text-[#3c4858] mx-auto leading-relaxed">
 
             <!-- Heading -->
 
-            <div class="mt-10 py-14 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
+            <div class="mt-10 pt-14 text-center max-w-[960px] md:max-w-[1080px] mx-auto px-5">
                 <div
-                    class="contact cursor-pointer bg-slate-200 mx-auto md:mx-0 w-4/5 min-w-fit max-w-[400px] rounded-md h-8 grid-rows-1 flex justify-between p-2 mb-5 align-middle">
+                    class="contact cursor-pointer bg-slate-200 mx-auto w-11/12 min-w-fit max-w-[500px] rounded-md h-8 grid-rows-1 flex justify-between p-2 align-middle mb-7">
                     <div
                         class="leading-[1.05rem] text-[10px] xs:leading-[1rem] xs:text-[12px] w-fit px-3 h-full bg-accent rounded-sm text-white mr-1">
                         Новое</div>
                     <div class="text-[12px] xs:text-[14px] leading-[1rem] w-fit mr-1">Удаленная обработка.</div>
                     <div class="text-[12px] xs:text-[14px] leading-[1rem] w-fit"><span class="underline">Узнавать
-                            больше</span>
+                        больше</span>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 3 24 24"
                                 fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
@@ -232,14 +132,12 @@
 
                 <h1 class="text-2xl font-medium pb-3 md:text-left">Турецкое гражданство по инвестициям</h1>
 
-                <h2 class="text-lg font-normal md:text-left">Поставщик полного спектра услуг - Консьерж | Финансовые и
-                    Юридические услуги |
-                    Собственность
-                    Приобретения</h2>
+                <h2 class="text-lg font-normal md:text-left">Поставщик полного спектра услуг - Консьерж | Финансовые и Юридические услуги | Собственность Приобретения</h2>
 
                 <h3 class="text-base font-normal text-gray-400 pt-3 md:text-left">
                     Вложите 400 000 долларов в недвижимость и получите турецкий паспорт менее чем за 2 месяца. Мы сотрудничаем с самыми известными компаниями, юристами, агентами по недвижимости, строителями и нотариусами в Турции.
                 </h3>
+
 
                 <div class="py-6">
                     <div class="flex pb-2">
@@ -252,8 +150,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Инвестиции в недвижимость с
-                            гарантией аренды 8%</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Инвестиции в недвижимость с гарантией аренды 8%</p>
                     </div>
                     <div class="flex pb-2">
                         <div>
@@ -266,8 +163,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Перепродать недвижимость
-                            через 3 года</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Перепродать недвижимость через 3 года</p>
                     </div>
                     <div class="flex pb-2">
                         <div>
@@ -283,7 +179,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Соавторы в 80 странах, чтобы помочь вам </p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Сотрудники в 80 странах, чтобы помочь вам </p>
                     </div>
                     <div class="flex">
                         <div>
@@ -297,17 +193,15 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Наши юристы позаботятся о
-                            сложных льготах по НДС</p>
+                        <p class="text-[17px] font-normal leading-[1.3rem] text-gray-400 ">Наши юристы позаботятся о сложных льготах по НДС</p>
                     </div>
                 </div>
 
-
                 <!-- sm:grid-cols-2 grid-cols-1 gap-5 -->
 
-                <div class="flex justify-around md:justify-start flex-wrap">
+                <div class="flex justify-center flex-wrap">
                     <a
-                        class="mb-4 md:mr-4 contact cursor-pointer rounded-md bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-sm">
+                        class="mx-3 mb-4 md:mr-4 contact cursor-pointer rounded-md bg-accent hover:bg-accent-600 text-white px-6 py-3 font-normal text-sm">
                         <span>
                             Поговорите с экспертом
                         </span>
@@ -320,19 +214,19 @@
                             </svg>
                         </span>
                     </a>
-                    <div
-                        class="properties-tggl rounded-md grid place-items-center cursor-pointer px-6 py-3 font-normal text-sm border-accent bg-slate-200 hover:bg-slate-300 h-fit">
+                    <a href="/ru/properties.html"
+                        class="rounded-md grid place-items-center cursor-pointer px-6 py-3 font-normal text-sm border-accent bg-slate-200 hover:bg-slate-300 h-fit mx-3">
                         <span>
                             Просмотр недвижимости
                         </span>
 
-                    </div>
+                    </a>
                 </div>
             </div>
 
             <!-- Benefits -->
 
-            <div class="benefits pt-14 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <div id="benefits" class="pt-14 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
                 <div
                     class="badge bg-accent text-white rounded-sm w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
                     <span>Преимущества программы
@@ -866,7 +760,7 @@
 
             <!-- Investment Options -->
 
-            <div class="investment pt-20">
+            <div id="investment" class="pt-20">
                 <div class="bg-slate-800 w-full pb-10 pt-14 px-5">
 
                     <div class="max-w-[960px] md:max-w-[1080px] mx-auto">
@@ -946,7 +840,7 @@
 
             <!-- Four easy steps to acquiring Turkish citizenship -->
 
-            <div class="process max-w-[960px] md:max-w-[1080px] mx-auto px-5 py-20">
+            <div id="process" class="max-w-[960px] md:max-w-[1080px] mx-auto px-5 py-20">
                 <div
                     class="badge bg-accent text-white rounded-sm w-fit flex py-[5px] px-2 text-[12px] font-semibold justify-center">
                     <span>Четыре простых шага к получению турецкого гражданства</span>
@@ -1168,26 +1062,6 @@
 
             <div class="faq py-10 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
                 <h1 class="mb-10">Часто Задаваемые Вопросы</h1>
-
-                <div
-                    class="fuq shadow-sm mb-6 rounded-xl text-sm border border-b-0 duration-300 transition-all overflow-hidden">
-                    <div class="p-5 toggle flex justify-between cursor-pointer">
-                        <div class="question"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="inline mr-4">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z">
-                                </path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
-                            </svg>Сколько дней в году мне потребуется
-                            проживать в Турции?</div>
-                        <div class="grid place-items-center">
-                            <p class="h-fit select-none text-gray-400 ml-5 w-4">+</p>
-                        </div>
-                    </div>
-                    <p class="answer hidden text-gray-400 p-5">Вам не потребуется
-                        оставаться в Турции в течение
-                        минимальное количество дней в течение года.</p>
-                </div>
 
                 <div
                     class="fuq shadow-sm mb-6 rounded-xl text-sm border border-b-0 duration-300 transition-all overflow-hidden">
@@ -1491,7 +1365,7 @@
 
             <hr class="mt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
 
-            <div class="terms pt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
+            <div id="terms" class="pt-20 px-5 max-w-[960px] md:max-w-[1080px] mx-auto">
 
 
                 <!-- Terms and Conditions -->
@@ -1603,34 +1477,35 @@
                 </div>
 
                 <!-- Footer -->
-
                 <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto my-20 grid grid-cols-3 gap-5 gap-y-10">
                     <div class="p-4 bg-white border border-b-0  shadow-sm rounded-2xl col-span-3">
-                        <img alt="Image placeholder" src="turkey.svg" style="width: 30px;">
-                        <h5 class="text-sm font-medium pt-2">Турецкое гражданство по инвестициям</h5>
-                        <p class="text-xs text-gray-400 pt-2">Мы помогаем вам с момента подачи заявки до ее утверждения.
-                        </p>
+                        <img alt="Image placeholder" src="../turkey.svg" style="width: 30px;">
+                        <h5 class="text-sm font-medium pt-2">Гражданство Турции за инвестиции</h5>
+                        <p class="text-xs text-gray-400 pt-2">Мы помогаем вам от подачи заявки до утверждения.</p>
                         <a class="text-xs contact cursor-pointer text-accent">Поговорите с экспертом</a>
                     </div>
-
+    
                     <div>
-                        <h5 class="text-xs font-medium pb-2">Cсылки</h5>
-                        <a class="text-xs text-gray-400 block hover:underline py-1" href="/ru/disclaimer.html">Оговорка</a>
+                        <h5 class="text-xs font-medium pb-2">Ссылки</h5>
+                        <a class="text-xs text-gray-400 block hover:underline py-1"
+                            href="/ru/disclaimer.html">Оговорка</a>
                         <a class="text-xs text-gray-400 block hover:underline py-1" href="/ru/privacy.html">Политика
                             Конфиденциальности</a>
-                        <a class="text-xs text-gray-400 block hover:underline py-1" href="/ru/terms.html">Условия и Положения</a>
+                        <a class="text-xs text-gray-400 block hover:underline py-1" href="/ru/terms.html">Условия и
+                            Положения</a>
                     </div>
-
+    
                     <div>
                         <h5 class="text-xs font-medium pb-2">Контакт</h5>
-                        <a class="text-xs text-gray-400 block hover:underline py-1" href="">Email</a>
+                        <a class="text-xs text-gray-400 block hover:underline py-1" href="mailto:info@financialfortress.ru">Email</a>
                         <!-- <a class="text-xs text-gray-400 block hover:underline py-1" href="">WhatsApp</a> -->
                         <a class="contact text-xs text-gray-400 block hover:underline py-1" href="">Telegram</a>
                     </div>
-
+    
                     <div>
                         <h5 class="text-xs font-medium pb-2">Адрес</h5>
-                        <a class="text-xs text-gray-400 block hover:underline py-1" href="">Невский пр-кт, д63, Санкт-Петербург, 191025, Россия</a>
+                        <a class="text-xs text-gray-400 block hover:underline py-1" href="">Невский пр-кт, д63,
+                            Санкт-Петербург, 191025, Россия</a>
                     </div>
                 </div>
 

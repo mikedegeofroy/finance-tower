@@ -17,6 +17,15 @@
 
         gtag('config', 'G-FJFMGHNNH4');
     </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -24,25 +33,25 @@
         <div class="px-5 max-w-[960px] md:max-w-[1080px] mx-auto flex justify-between">
             <div class="flex">
                 <div
-                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex md:hidden closed cursor-pointer">
+                    class="burger w-8 justify-between flex-col py-[8px] px-[8px] bg-accent rounded-sm mr-2 flex closed cursor-pointer">
 
                     <div class="border-b-2 border-white-300 origin-center"></div>
                     <div class="border-b-2 border-white-300 origin-center"></div>
                     <div class="border-b-2 border-white-300 origin-center"></div>
                 </div>
-                <a href="/en.html">
-                    <img class="w-20 inline cursor-pointer" src="/logo.png" alt="">
+                <a class="w-20 inline cursor-pointer" href="/en.html">
+                    <img class="w-full h-full" src="/logo.png" alt="">
                 </a>
             </div>
-            <div class="hidden md:inline navigation">
+            <div class="hidden md:inline navigation opacity-0">
                 <a href="/en.html#benefits" class="inline text-sm px-4 text-gray-400 cursor-pointer">Benefits</a>
-                <a href="/en.html#invest" class="inline text-sm px-4 text-gray-400 cursor-pointer">Investment
+                <a href="/en.html#investment" class="inline text-sm px-4 text-gray-400 cursor-pointer">Investment
                     Options</a>
                 <a href="/en.html#process" class="inline text-sm px-4 text-gray-400 cursor-pointer">Process</a>
                 <a href="/en.html#terms" class="inline text-sm px-4 text-gray-400 cursor-pointer">Terms</a>
             </div>
             <a class="lang float-right inline text-white rounded-sm w-9 text-xs leading-[1.6rem] bg-accent"
-                href="/ru.html">
+                href="/ru/privacy.html">
                 <div class="grid place-items-center w-full h-full">
                     Ru
                 </div>
@@ -50,7 +59,7 @@
         </div>
     </header>
 
-    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white">
+    <div class="z-39 burger-menu closed -top-80 fixed h-fit shadow-md w-full bg-white md:hidden">
         <div class="pb-5 max-w-[960px] md:max-w-[1080px] mx-auto px-5">
             <div class="navigation pt-10">
                 <div class="py-2 my-2 text-gray-400 text-sm w-fit cursor-pointer">
